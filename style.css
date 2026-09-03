@@ -73,7 +73,7 @@ button {
 
     backdrop-filter: blur(12px);
 
-    border-bottom: 1px solid var(--border);
+    border-bottom: 35px solid white;
 
     transition: 0.3s ease;
 }
