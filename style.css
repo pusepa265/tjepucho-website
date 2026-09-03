@@ -90,8 +90,8 @@ button {
 }
 
 .brand img {
-    width: 300px;
-    max-height: 65px;
+    width: 500px;
+    max-height: 100px;
     object-fit: contain;
 }
 
