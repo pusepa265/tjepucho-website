@@ -761,7 +761,7 @@ button {
 @media (max-width: 600px) {
 
     .navbar {
-        height: 75px;
+        height: 135px;
     }
 
     .brand img {
