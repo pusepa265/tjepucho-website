@@ -707,7 +707,9 @@ button {
 ========================================= */
 
 @media (max-width: 850px) {
-
+    .navbar {
+        height: 120px;
+    }
     .menu-toggle {
         display: block;
     }
@@ -715,7 +717,7 @@ button {
     .nav-links {
         position: absolute;
 
-        top: 88px;
+        top: 120px;
         left: 0;
 
         width: 100%;
