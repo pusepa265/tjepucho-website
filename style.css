@@ -79,8 +79,8 @@ button {
 }
 
 .navbar {
-    width: min(1200px, 92%);
-    height: 88px;
+    width: min(1500px, 92%);
+    height: 120px;
 
     margin: auto;
 
@@ -90,7 +90,7 @@ button {
 }
 
 .brand img {
-    width: 500px;
+    width: 800px;
     max-height: 100px;
     object-fit: contain;
 }
