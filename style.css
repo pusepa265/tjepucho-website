@@ -912,3 +912,130 @@ button {
     font-weight: 700;
     font-style: italic;
 }
+/* =========================
+   PAYMENT METHODS
+   ========================= */
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    margin-top: 20px;
+}
+
+.payment-card {
+    height: 70px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: 0.2s;
+}
+
+.payment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* VISA */
+
+.visa-logo {
+    color: #1434CB;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* MASTERCARD */
+
+.mc-logo {
+    position: relative;
+    width: 70px;
+    height: 45px;
+}
+
+.mc-circle {
+    position: absolute;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    top: 1px;
+}
+
+.mc-red {
+    background: #EB001B;
+    left: 2px;
+}
+
+.mc-orange {
+    background: #F79E1B;
+    right: 2px;
+}
+
+/* GOOGLE PAY */
+
+.gpay-card {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.g-logo {
+    font-weight: 700;
+    margin-right: 4px;
+    background: linear-gradient(
+        90deg,
+        #4285F4,
+        #34A853,
+        #FBBC05,
+        #EA4335
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gpay-text {
+    color: #3c4043;
+}
+
+/* APPLE PAY */
+
+.applepay-card {
+    font-size: 27px;
+    font-weight: 600;
+    color: #000;
+}
+
+.apple-logo {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+/* PAYPAL */
+
+.paypal-card {
+    font-size: 25px;
+}
+
+.paypal-pay {
+    color: #000;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.paypal-pal {
+    color: #55b7df;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* BINANCE */
+
+.binance-card {
+    color: #F3BA2F;
+    font-size: 20px;
+    font-weight: 700;
+}
