@@ -182,3 +182,54 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+// =========================
+// DONATION MODAL
+// =========================
+
+let selectedAmount = 0;
+
+function openDonation() {
+    document.getElementById("donationModal").style.display = "flex";
+}
+
+function closeDonation() {
+    document.getElementById("donationModal").style.display = "none";
+}
+
+function selectAmount(amount) {
+    selectedAmount = amount;
+    document.getElementById("customAmount").value = amount;
+}
+
+function getDonationAmount() {
+    const customAmount =
+        document.getElementById("customAmount").value;
+
+    if (customAmount && Number(customAmount) > 0) {
+        return Number(customAmount);
+    }
+
+    return selectedAmount;
+}
+
+function payWithPayPal() {
+    const amount = getDonationAmount();
+
+    if (!amount) {
+        alert("Please select or enter a donation amount.");
+        return;
+    }
+
+    alert("PayPal donation selected: $" + amount);
+}
+
+function payWithBinance() {
+    const amount = getDonationAmount();
+
+    if (!amount) {
+        alert("Please select or enter a donation amount.");
+        return;
+    }
+
+    alert("Binance Pay donation selected: $" + amount);
+}
