@@ -233,3 +233,13 @@ function payWithBinance() {
 
     alert("Binance Pay donation selected: $" + amount);
 }
+function payWithCard() {
+    const amount = getDonationAmount();
+
+    if (!amount) {
+        alert("Please select or enter a donation amount.");
+        return;
+    }
+
+    alert("Visa / Mastercard donation selected: $" + amount);
+}
