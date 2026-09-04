@@ -1039,3 +1039,129 @@ button {
     font-size: 20px;
     font-weight: 700;
 }
+/* =========================
+   OUR BACKGROUND
+   ========================= */
+
+.background-section {
+    padding: 80px 20px;
+    background: #f7faf8;
+}
+
+.background-container {
+    width: min(1100px, 92%);
+    margin: auto;
+}
+
+.background-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.background-heading .section-label {
+    display: inline-block;
+    color: var(--green);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.background-heading h2 {
+    color: var(--green-dark);
+    font-size: 38px;
+    margin: 0;
+}
+
+.background-content {
+    max-width: 900px;
+    margin: 0 auto 55px;
+}
+
+.background-content p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.background-content strong {
+    color: var(--green-dark);
+}
+
+/* TIMELINE */
+
+.background-timeline {
+    max-width: 900px;
+    margin: auto;
+    border-left: 3px solid var(--green);
+    padding-left: 30px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: var(--green);
+    border-radius: 50%;
+    left: -39px;
+    top: 5px;
+}
+
+.timeline-year {
+    color: var(--green-dark);
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.timeline-text h3 {
+    margin: 0 0 8px;
+    color: #222;
+    font-size: 21px;
+}
+
+.timeline-text p {
+    margin: 0;
+    color: #555;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .background-section {
+        padding: 60px 15px;
+    }
+
+    .background-heading h2 {
+        font-size: 30px;
+    }
+
+    .background-content p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .background-timeline {
+        padding-left: 24px;
+    }
+
+    .timeline-item::before {
+        left: -33px;
+    }
+
+    .timeline-text h3 {
+        font-size: 19px;
+    }
+
+}
