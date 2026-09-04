@@ -725,17 +725,39 @@
 
        <h3>Choose payment method</h3>
 
-<<button class="payment-option" onclick="payWithPayPal()">
-    <span class="paypal-pay">Pay</span><span class="paypal-pal">Pal</span>
-</button>
+<div class="payment-methods">
 
-<button class="payment-option" onclick="payWithCard()">
-    💳 Visa / Mastercard
-</button>
+    <button class="payment-card visa-card" onclick="payWithCard()">
+        <span class="visa-logo">VISA</span>
+    </button>
 
-<button class="payment-option" onclick="payWithBinance()">
-    Binance Pay
-</button>
+    <button class="payment-card mastercard-card" onclick="payWithCard()">
+        <span class="mc-logo">
+            <span class="mc-circle mc-red"></span>
+            <span class="mc-circle mc-orange"></span>
+        </span>
+    </button>
+
+    <button class="payment-card gpay-card" onclick="payWithCard()">
+        <span class="g-logo">G</span>
+        <span class="gpay-text">Pay</span>
+    </button>
+
+    <button class="payment-card applepay-card" onclick="payWithCard()">
+        <span class="apple-logo"></span>
+        <span>Pay</span>
+    </button>
+
+    <button class="payment-card paypal-card" onclick="payWithPayPal()">
+        <span class="paypal-pay">Pay</span>
+        <span class="paypal-pal">Pal</span>
+    </button>
+
+    <button class="payment-card binance-card" onclick="payWithBinance()">
+        <span>Binance Pay</span>
+    </button>
+
+</div>
 
 <p id="paymentMessage"></p>
     </div>
