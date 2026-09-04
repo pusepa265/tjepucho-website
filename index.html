@@ -690,6 +690,53 @@
 
 
 <script src="script.js"></script>
+<div id="donationModal" class="donation-modal">
 
+    <div class="donation-box">
+
+        <button class="close-donation" onclick="closeDonation()">
+            ×
+        </button>
+
+        <h2>Support TJEPUCHO</h2>
+
+        <p>
+            Your contribution can help strengthen initiatives
+            supporting health, sanitation, environmental stewardship
+            and community well-being.
+        </p>
+
+        <h3>Select donation amount</h3>
+
+        <div class="amount-options">
+            <button onclick="selectAmount(5)">$5</button>
+            <button onclick="selectAmount(10)">$10</button>
+            <button onclick="selectAmount(25)">$25</button>
+            <button onclick="selectAmount(50)">$50</button>
+            <button onclick="selectAmount(100)">$100</button>
+        </div>
+
+        <input
+            type="number"
+            id="customAmount"
+            placeholder="Enter custom amount"
+            min="1"
+        >
+
+        <h3>Choose payment method</h3>
+
+        <button class="payment-option" onclick="payWithPayPal()">
+            PayPal
+        </button>
+
+        <button class="payment-option" onclick="payWithBinance()">
+            Binance Pay
+        </button>
+
+        <p id="paymentMessage"></p>
+
+    </div>
+
+</div>
 </body>
 </html>
