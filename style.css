@@ -901,3 +901,14 @@ button {
     width: 100%;
     margin-top: 10px;
 }
+.paypal-pay {
+    color: #000;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.paypal-pal {
+    color: #55b7df;
+    font-weight: 700;
+    font-style: italic;
+}
