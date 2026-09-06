@@ -1305,3 +1305,42 @@ button {
     }
 
 }
+/* =========================
+   PAYMENT BUTTON SIZE FIX
+   ========================= */
+
+.payment-card {
+    height: 150px !important;
+    width: 100% !important;
+    background: white !important;
+    border: 1px solid #ddd !important;
+    border-radius: 14px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10) !important;
+}
+
+.visa-logo {
+    font-size: 48px !important;
+    font-weight: 900 !important;
+    font-style: italic !important;
+}
+
+.paypal-card {
+    font-size: 36px !important;
+}
+
+.binance-card {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+}
+
+.gpay-card {
+    font-size: 38px !important;
+}
+
+.applepay-card {
+    font-size: 38px !important;
+}
