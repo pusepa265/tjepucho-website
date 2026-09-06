@@ -1205,3 +1205,52 @@ button {
     }
 
 }
+/* =========================
+   TABLET PAYMENT METHODS
+   ========================= */
+
+@media (max-width: 850px) {
+
+    .payment-methods {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 14px !important;
+        margin-top: 20px !important;
+    }
+
+    .payment-card {
+        height: 150px !important;
+        background: white !important;
+        border: 1px solid #ddd !important;
+        border-radius: 14px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        cursor: pointer !important;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.10) !important;
+    }
+
+    .visa-logo {
+        font-size: 48px !important;
+        font-weight: 900 !important;
+        font-style: italic !important;
+    }
+
+    .paypal-card {
+        font-size: 36px !important;
+    }
+
+    .binance-card {
+        font-size: 28px !important;
+        font-weight: 700 !important;
+    }
+
+    .gpay-card {
+        font-size: 38px !important;
+    }
+
+    .applepay-card {
+        font-size: 38px !important;
+    }
+
+}
