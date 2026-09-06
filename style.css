@@ -1173,3 +1173,35 @@ button {
     }
 
 }
+/* =========================
+   TABLET DONATION FIX
+   ========================= */
+
+@media (max-width: 850px) {
+
+    .donation-modal {
+        display: none;
+        position: fixed !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: rgba(0, 0, 0, 0.65) !important;
+        z-index: 99999 !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    .donation-box {
+        background: white !important;
+        width: min(520px, 100%) !important;
+        max-height: 90vh !important;
+        overflow-y: auto !important;
+        border-radius: 20px !important;
+        padding: 30px !important;
+        box-sizing: border-box !important;
+        position: relative !important;
+    }
+
+}
