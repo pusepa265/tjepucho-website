@@ -1457,3 +1457,28 @@ button {
         max-height: 100px !important;
     }
 }
+/* FORCE HEADER LOGO TO LEFT ON PC */
+
+@media (min-width: 851px) {
+    .navbar {
+        position: relative !important;
+    }
+
+    .navbar .brand {
+        position: absolute !important;
+        left: 20px !important;
+        top: 10px !important;
+        margin: 0 !important;
+    }
+
+    .navbar .brand img {
+        width: 280px !important;
+        height: auto !important;
+        max-height: 100px !important;
+        object-fit: contain !important;
+    }
+
+    .navbar .nav-links {
+        margin-left: auto !important;
+    }
+}
