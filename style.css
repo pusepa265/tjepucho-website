@@ -1381,3 +1381,44 @@ button {
 .applepay-card {
     font-size: 38px !important;
 }
+/* =========================
+   FORCE LOGO TO TOP LEFT
+   ========================= */
+
+.navbar {
+    position: relative !important;
+    justify-content: flex-end !important;
+}
+
+.brand {
+    position: absolute !important;
+    left: 20px !important;
+    top: 10px !important;
+    margin: 0 !important;
+}
+
+.brand img {
+    width: 280px !important;
+    height: auto !important;
+    max-height: 100px !important;
+    object-fit: contain !important;
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        justify-content: flex-end !important;
+        position: relative !important;
+    }
+
+    .brand {
+        position: absolute !important;
+        left: 10px !important;
+        top: 5px !important;
+        margin: 0 !important;
+    }
+
+    .brand img {
+        width: 220px !important;
+        max-height: 100px !important;
+    }
+}
