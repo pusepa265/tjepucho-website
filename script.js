@@ -251,3 +251,24 @@ const supabaseClient = window.supabase.createClient(
     SUPABASE_URL,
     SUPABASE_ANON_KEY
 );
+// SAVE DONATION TO SUPABASE
+async function saveDonation(amount, paymentMethod) {
+    const { data, error } = await supabaseClient
+        .from("donations")
+        .insert([
+            {
+                amount: amount,
+                currency: "USD",
+                payment_method: paymentMethod,
+                status: "pending"
+            }
+        ]);
+
+    if (error) {
+        console.error("Donation error:", error);
+        alert("There was a problem recording your donation. Please try again.");
+        return false;
+    }
+
+    return true;
+}
