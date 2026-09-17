@@ -243,3 +243,7 @@ function payWithCard() {
 
     alert("Visa / Mastercard donation selected: $" + amount);
 }
+// SUPABASE CONNECTION
+const SUPABASE_URL = "https://hfuabyrqbvfzuvhdxzvf.supabase.co";
+
+const SUPABASE_ANON_KEY = "sb_publishable_-ltslBHtsG9r-9g2rnJITg_4Ka3n1M9";
