@@ -247,3 +247,7 @@ function payWithCard() {
 const SUPABASE_URL = "https://hfuabyrqbvfzuvhdxzvf.supabase.co";
 
 const SUPABASE_ANON_KEY = "sb_publishable_-ltslBHtsG9r-9g2rnJITg_4Ka3n1M9";
+const supabaseClient = window.supabase.createClient(
+    SUPABASE_URL,
+    SUPABASE_ANON_KEY
+);
