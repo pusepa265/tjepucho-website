@@ -115,7 +115,7 @@ button {
 @media (max-width: 850px) {
 
     .navbar {
-        width: 100%;
+        width: 180%;
         padding: 0 15px;
         box-sizing: border-box;
         justify-content: flex-end;
@@ -745,7 +745,7 @@ button {
 
 @media (max-width: 850px) {
    .navbar {
-    height: 120px;
+    height: 180px;
     width: 100%;
     padding: 0 15px;
     box-sizing: border-box;
